@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <br><br>
+    <div class="form">
+        <h1>Register Yourself</h1>
+        <form action="/register" method="POST">
+            <div class="first-half">
+                <h2>Personal-Details</h2>
+                Name : &nbsp;
+                <input type="text" class="box" id="name" name="name" placeholder="name" required />
+                <br><br />
+                Email : &nbsp;
+                <input type="text" class="box" id="email" name="email" placeholder="Email" required />
+                <br><br />
+                Phone Number : &nbsp;
+                <input type="text" class="box" id="phno" name="phno" placeholder="Mobile" required />
+                <br><br />
+                Age : &nbsp;
+                <input type="date" name="age" required />
+                <br><br>
+                Address : &nbsp;<br>
+                <textarea cols="50" rows="4" name="addrs"></textarea>
+                <br><br>
+                Linkedin : &nbsp;
+                <input type="text" class="box" name="lnkdn" />
+                <br><br>
+                Summary : &nbsp;<br />
+                <textarea cols="50" rows="7" name="sumry"></textarea>
+
+
+            </div>
+
+            <div class="scnd-half">
+                <h2>Educational Details</h2>
+                Educational-Detail (1) : &nbsp;<br>
+                <input type="text" class="box" name="ed1" />
+                <br><br>
+                Educational-Detail(2) : &nbsp;<br>
+                <input type="text" class="box" name="ed2" />
+                <br><br>
+                Skills : <br>
+                <input type="text" class="box" name="skills" />
+            </div>
+
+            <div class="third-half">
+                <h2>Projects</h2>
+                Title : &nbsp;
+                <input type="text" class="box" name="title" /><br /><br />
+                Description : <br>
+                <textarea rows="4" cols="40" name="descr"></textarea>
+                <br /><br>
+            </div>
+
+            <input type="submit" value="Submit" onclick="generateRes()" id="submit" />
+            <br><br>
+        </form>
+    </div>
+
+
+    <!-- RESUME TEMPLATE: -->
+    <!-- <div class="resume-template">
+        <div class="personalDetails">
+            Name : &nbsp; <br>
+            <p id="nameRes"></p>
+            <br><br>
+            Email : &nbsp; <br>
+            <p id="emailRes"></p>
+        </div>
+    </div> -->
+    <br /><br />
+    <!-- <div class="search">Search a Resume: <input></div> -->
+    <script src="../index.js"></script>
+</body>
+
+
+</html>

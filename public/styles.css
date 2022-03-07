@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 5px;
+}
+
+body{
+    background-color: aqua;
+}
+
+input{
+    height: 22px;
+    padding: 3px;
+    border: 1px solid black;
+    min-width: 200px;
+}
+
+textarea{
+    padding: 3px;
+    border: 1.5px solid black;
+}
+
+.first-half{
+    border: 1px solid black;
+    width: 550px;
+    padding: 10px;
+    transform: translate(40px, 20px);
+}
+
+.scnd-half{
+    align-content: center   ;
+   transform: translate(120%, -220%);
+   border: 1px solid black;
+   width: 580px;
+   padding: 10px;
+}
+
+.scnd-half input{
+    min-width: 400px;
+}
+
+.third-half{
+    border: 1px solid black;
+    width: 580px;
+    padding: 10px;
+   transform: translate(720px, -560px);
+}
+
+h1{
+    text-align: center ;
+}
+
+#submit{
+    border-radius: 10px;
+    background-color: yellow;
+    color: red;
+    height: 30px;
+    transform: translate(600px, -450px);
+}
+
+.form{
+    border: 1px solid black;
+    padding: 15px;
+    height: 820px;
+   border-radius: 12px;
+}
